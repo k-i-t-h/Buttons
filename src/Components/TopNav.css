@@ -1,0 +1,9 @@
+.MainLinkStyle{
+    color: #000;
+    text-decoration: none !important;
+    font-weight: bolder;
+}
+.MainLinkStyle:hover{
+    text-decoration: none;
+    color:rgb(31, 81, 248); 
+}
