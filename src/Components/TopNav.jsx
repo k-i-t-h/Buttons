@@ -17,8 +17,8 @@ class TopNav extends React.Component{
 
     render(){ 
       return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light p-3">
-        <Link className={`MainLinkStyle mr-4`} to="/">Cardium</Link>  
+        <nav className="navbar navbar-expand-lg navbar-light bg-transparent p-3">
+        <Link className={`text-decoration-none font-weight-bolder text-dark mr-4`} to="/">Cardium</Link>  
         <button className="navbar-toggler " onClick={this.toggleNav} type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
           <div  className={`navbar-collapse ${!this.state.isOpen && "collapse" }` }  id="navbarNavAltMarkup" >
               <div className="navbar-nav">
