@@ -7,3 +7,11 @@
     text-decoration: none;
     color:#ccc; 
 }
+
+.transitionStyle{ 
+    transition: ease 4s
+} 
+
+.logoText{
+    font-size: x-large;
+}
