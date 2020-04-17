@@ -6,12 +6,13 @@
 .MainLinkStyle:hover{
     text-decoration: none;
     color:#ccc; 
-}
-
-.transitionStyle{ 
-    transition: ease 4s
 } 
 
 .logoText{
     font-size: x-large;
+}
+
+.navItem{
+    margin: 0.5rem 0;
+    padding: 0;
 }

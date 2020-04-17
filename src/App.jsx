@@ -6,6 +6,10 @@ import About from "./Components/About";
 import ContactUs from "./Components/ContactUs";
 import CardDeck from "./Components/CardDeck/CardDeck";
 import "./App.css";
+
+
+
+/* Font Awesome */
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChevronCircleRight, faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons';
 library.add(faChevronCircleRight, faChevronCircleLeft);
