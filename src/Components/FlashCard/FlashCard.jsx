@@ -12,15 +12,15 @@ function FlashCard(props) {
   })
 
   return (
-      <React.Fragment>
-        <div onClick={() => set(state => !state)} className="d-flex justify-content-center">
+    <React.Fragment>
+      <div onClick={() => set(state => !state)} className="d-flex justify-content-center">
         <a.div className="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }}>
-        {props.data.question}
+          {props.data.question}
         </a.div>
-        <a.div  className={"c front text-dark"} style={{ opacity, transform: transform.interpolate(t => `${t} rotateY(180deg)`) }}>
-        {props.data.answer}
-        </a.div> 
-        </div>
+        <a.div className={"c front text-dark"} style={{ opacity, transform: transform.interpolate(t => `${t} rotateY(180deg)`) }}>
+          {props.data.answer}
+        </a.div>
+      </div>
     </React.Fragment>
   )
 }

@@ -1,18 +1,18 @@
-.MainLinkStyle{ 
-    color: #ffff;
-    text-decoration: none !important;
-    font-weight: bolder;
+.MainLinkStyle {
+  color: #ffff;
+  text-decoration: none !important;
+  font-weight: bolder;
 }
-.MainLinkStyle:hover{
-    text-decoration: none;
-    color:#ccc; 
-} 
-
-.logoText{
-    font-size: x-large;
+.MainLinkStyle:hover {
+  text-decoration: none;
+  color: #ccc;
 }
 
-.navItem{
-    margin: 0.5rem 0;
-    padding: 0;
+.logoText {
+  font-size: x-large;
+}
+
+.navItem {
+  margin: 0.5rem 0;
+  padding: 0;
 }
