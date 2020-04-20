@@ -10,7 +10,6 @@ class Home extends React.Component {
 
     gotToDeck = () => this.props.history.push(`/card-deck`);
 
-
     render() {
 
         return (

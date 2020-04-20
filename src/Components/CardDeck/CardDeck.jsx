@@ -32,9 +32,7 @@ class CardDeck extends React.Component {
 
     componentDidMount() {
         const cardDeck = this.state.qnaArr.map(this.mapCards);
-        this.setState({
-            cardDeck
-        })
+        this.setState({ cardDeck })
     }
 
     mapCards = qna => (
@@ -65,7 +63,7 @@ class CardDeck extends React.Component {
     render() {
         return (
             <div className="cardContainer">
-                <div className="text-center">{10}</div>
+                <div className="d-absolute text-center p-4">{10}</div>
                 {this.state.cardDeck[`${this.state.current}`]}
                 <div className="d-flex" style={{ paddingTop: "25vh" }}>
                     <FontAwesomeIcon

@@ -25,16 +25,16 @@ const TopNav = () => {
         aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
       <div className={`navbar-collapse ${!isOpen && "collapse"}`} id="navbarNavAltMarkup">
         <a.div className="navbar-nav" style={isOpen ? fade : null}>
-          <Link className={`MainLinkStyle mr-4 mt-1 ${window.innerWidth < '1000px' && isOpen ? "" : "text-center"}`}
+          <Link className={`MainLinkStyle p-2 mt-1 ${!isOpen && window.innerWidth >= '1000px' ? "" : "ml-auto mr-auto"}`}
             onClick={isOpen ? toggleNav : null}
             to="/" >Home</Link>
-          <Link className={`MainLinkStyle mr-4 mt-1 ${window.innerWidth < '1000px' && isOpen ? "" : "text-center"}`}
+          <Link className={`MainLinkStyle p-2 mt-1 ${!isOpen && window.innerWidth >= '1000px' ? "" : "ml-auto mr-auto"}`}
             onClick={isOpen ? toggleNav : null}
             to="/about" >About</Link>
-          <Link className={`MainLinkStyle mr-4 mt-1 ${window.innerWidth < '1000px' && isOpen ? "" : "text-center"}`}
+          <Link className={`MainLinkStyle p-2 mt-1 ${!isOpen && window.innerWidth >= '1000px' ? "" : "ml-auto mr-auto"}`}
             onClick={isOpen ? toggleNav : null}
             to="/card-deck" >Sample Deck</Link>
-          <Link className={`MainLinkStyle mr-4 mt-1 ${window.innerWidth < '1000px' && isOpen ? "" : "text-center"}`}
+          <Link className={`MainLinkStyle p-2 mt-1 ${!isOpen && window.innerWidth >= '1000px' ? "" : "ml-auto mr-auto"}`}
             onClick={isOpen ? toggleNav : null}
             to="/contact-us" >Contact Us</Link>
         </a.div>

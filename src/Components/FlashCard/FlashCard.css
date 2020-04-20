@@ -5,7 +5,7 @@
 }
 
 .back {
-  background: black; 
+  background: black;
 }
 
 .front {
@@ -13,39 +13,36 @@
 }
 
 .c {
-  -webkit-box-shadow: 0px 16px 20px -1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 16px 20px -1px rgba(0,0,0,0.75);
-  box-shadow: 0px 16px 20px -1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 16px 20px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 16px 20px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 16px 20px -1px rgba(0, 0, 0, 0.75);
   padding: 1rem;
-    position: absolute;
-    width: 15.8rem;
-    height: 15.8rem;
-    cursor: pointer;
-    margin-bottom: 10%;
-    margin-top: 10%;
-    border-radius: 10px;
-  } 
- 
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .c {
-        padding: 2rem;
-        width: 30rem;
-        min-height: 30rem;
-      }
+  width: 15.8rem;
+  height: 15.8rem;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px){
-    .c {
-        width: 30rem;
-        padding: 2rem;
-        min-height: 30rem;
-      }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .c {
+    padding: 2rem;
+    width: 30rem;
+    min-height: 30rem;
   }
+}
 
-  @media (min-width: 1200px){
-    .c {
-        width: 30rem;
-        padding: 2.5rem;
-        min-height: 30rem;
-      }  
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .c {
+    width: 30rem;
+    padding: 2rem;
+    min-height: 30rem;
   }
+}
+
+@media (min-width: 1200px) {
+  .c {
+    width: 30rem;
+    padding: 2.5rem;
+    min-height: 30rem;
+  }
+}
