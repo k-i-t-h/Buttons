@@ -33,10 +33,13 @@ const TopNav = () => {
             to="/about" >About</Link>
           <Link className={`MainLinkStyle p-2 mt-1 ${!isOpen && window.innerWidth >= '1000px' ? "" : "ml-auto mr-auto"}`}
             onClick={isOpen ? toggleNav : null}
-            to="/card-deck" >Sample Deck</Link>
+            to="/card-deck" >Demo</Link>
           <Link className={`MainLinkStyle p-2 mt-1 ${!isOpen && window.innerWidth >= '1000px' ? "" : "ml-auto mr-auto"}`}
             onClick={isOpen ? toggleNav : null}
             to="/contact-us" >Contact Us</Link>
+          <Link className={`MainLinkStyle p-2 mt-1 ${!isOpen && window.innerWidth >= '1000px' ? "" : "ml-auto mr-auto"}`}
+            onClick={isOpen ? toggleNav : null}
+            to="/card-form" >New Deck</Link>
         </a.div>
       </div>
     </nav>

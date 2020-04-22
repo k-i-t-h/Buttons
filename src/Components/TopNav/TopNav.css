@@ -1,18 +1,13 @@
 .MainLinkStyle {
-  color: #ffff;
+  color: #ffff !important;
   text-decoration: none !important;
   font-weight: bolder;
 }
 .MainLinkStyle:hover {
   text-decoration: none;
-  color: #ccc;
+  color: rgb(255, 153, 0) !important;
 }
 
 .logoText {
   font-size: x-large;
-}
-
-.navItem {
-  margin: 0.5rem 0;
-  padding: 0;
 }

@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About";
 import ContactUs from "./Components/ContactUs";
 import CardDeck from "./Components/CardDeck/CardDeck";
+import FlashCardForm from "./Components/FlashCard/FlashCardForm";
 import "./App.css";
 
 /* Font Awesome */
@@ -20,6 +21,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
+          <Route path="/card-form" exact component={FlashCardForm} />
           <Route path="/card-deck" exact component={CardDeck} />
           <Route path="/contact-us" exact component={ContactUs} />
         </Switch>

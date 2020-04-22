@@ -55,7 +55,7 @@ class CardDeck extends React.Component {
         })
             .then((value) => {
                 if (value) {
-                    this.props.history.push("/")
+                    this.props.history.push("/card-form")
                 }
             });
     }
@@ -63,25 +63,27 @@ class CardDeck extends React.Component {
     render() {
         return (
             <div className="cardContainer">
-                <div className="d-absolute text-center p-4">{10}</div>
+                <div className="d-block text-center p-4">{10}</div>
                 {this.state.cardDeck[`${this.state.current}`]}
-                <div className="d-flex" style={{ paddingTop: "25vh" }}>
-                    <FontAwesomeIcon
-                        className={`mr-auto d-none ${this.state.current >= 1 && 'd-block'}`}
-                        icon="chevron-circle-left"
-                        color="#ccc"
-                        size="2x"
-                        cursor={`${this.state.current >= 1 ? 'pointer' : 'cursor'}`}
-                        onClick={this.state.current >= 1 ? this.prevCard : null}
-                    />
-                    <FontAwesomeIcon
-                        className={`ml-auto`}
-                        icon="chevron-circle-right"
-                        color="#ccc"
-                        size="2x"
-                        cursor="pointer"
-                        onClick={!(this.state.current === this.state.cardDeck.length - 1) ? this.nextCard : this.congratulateAlert}
-                    />
+                <div className="d-block">
+                    <div className="d-flex">
+                        <FontAwesomeIcon
+                            className={`mr-auto d-none ${this.state.current >= 1 && 'd-block'}`}
+                            icon="chevron-circle-left"
+                            color="#ccc"
+                            size="2x"
+                            cursor={`${this.state.current >= 1 ? 'pointer' : 'cursor'}`}
+                            onClick={this.state.current >= 1 ? this.prevCard : null}
+                        />
+                        <FontAwesomeIcon
+                            className="ml-auto"
+                            icon="chevron-circle-right"
+                            color="#ccc"
+                            size="2x"
+                            cursor="pointer"
+                            onClick={!(this.state.current === this.state.cardDeck.length - 1) ? this.nextCard : this.congratulateAlert}
+                        />
+                    </div>
                 </div>
             </div>
         );
