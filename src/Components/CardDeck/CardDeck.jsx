@@ -10,17 +10,17 @@ class CardDeck extends React.Component {
         this.state = {
             qnaArr: [
                 {
-                    id: 1,
+                    id: 0,
                     question: "How are you?",
                     answer: "Fine, thank you!"
                 },
                 {
-                    id: 2,
+                    id: 1,
                     question: "Are we there yet?",
                     answer: "Close, but not yet!"
                 },
                 {
-                    id: 3,
+                    id: 2,
                     question: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus modi eius unde, veritatis numquam nulla non temporibus, veniam eveniet amet magni? Dolore laboriosam quas temporibus? This is the end",
                     answer: "Yes, always!"
                 }

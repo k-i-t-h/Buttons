@@ -9,8 +9,8 @@ class FlashCardForm extends React.Component {
         super(props)
         this.state = {
             step: 1,
-            qna: 0,
             data: {
+                id: 0,
                 question: "",
                 answer: ""
             },
@@ -22,8 +22,25 @@ class FlashCardForm extends React.Component {
 
     }
 
-    submitHandler = (value, { resetForm }) => {
 
+    submitHandler = () => {
+        this.setState((prevState) => {
+            let cardDeck = [...prevState.cardDeck]
+            let data = { ...prevState.data }
+            cardDeck.push(data)
+            return { ...prevState, cardDeck }
+        })
+        this.resetForms();
+    }
+
+    resetForms = () => {
+        this.setState((prevState) => {
+            let data = { ...prevState.data };
+            data.id += 1;
+            data.question = "";
+            data.answer = "";
+            return { ...prevState, step: 1, data }
+        })
     }
 
     handleChange = value => {
@@ -50,13 +67,13 @@ class FlashCardForm extends React.Component {
     render() {
         return (
             <main className="row">
-                <section className="col-12" align="center">
+                <section className="col-12 container" align="center">
                     {<div className="text-right">
                         {
-                            this.state.step > 1 && (<button type="button" onClick={this.prevStep} className="btn btn-info m-2 font-weight-bold">Back</button>)
+                            this.state.step > 1 && (<button type="button" onClick={this.prevStep} className="btn m-2 text-light font-weight-bold">Back</button>)
                         }
                         {
-                            this.state.step < 3 ? (<button type="button" onClick={this.nextStep} className="btn btn-warning m-2 font-weight-bold">Next</button>) : (<button type="button" onClick={this.submitHandler} className="btn btn-warning m-1 font-weight-bold">Submit</button>)
+                            this.state.step < 3 ? (<button type="button" onClick={this.nextStep} className="btn btn-warning m-2 font-weight-bold">Next</button>) : (<button type="button" onClick={this.submitHandler} className="btn btn-primary m-1 font-weight-bold">Add</button>)
                         }
                     </div>}
                     {this.state.step === 1 && (
@@ -74,7 +91,7 @@ class FlashCardForm extends React.Component {
                     {this.state.step === 3 &&
                         <div className="d-block">
                             <label htmlFor="question">
-                                <h5>Add to Deck</h5>
+                                <h5>Review your card; Flip it. Then "Add" it to Deck</h5>
                             </label>
                             <div className="m-3">
                                 <FlashCard
